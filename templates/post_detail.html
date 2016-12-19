@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block head %}{{ title }}{% endblock head %}
+{% block content %}
+<div class="col-sm-6 col-sm-offset-3">
+    <h1>{{ object.title }} <small>{{ object.timestamp }}</small></h1>
+    {{ object.content|linebreaks }}<br>
+</div>
+{% endblock content %}
